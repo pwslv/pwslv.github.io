@@ -2,10 +2,7 @@ class MiFooter
   extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
-      `<p>
-        &copy; 2021
-        SALINAS LUNA VICTOR HUGO.
-      </p>`;
+      `<li>&copy; Untitled. All rights reserved.</li><li>Design:SALINAS LUNA VICTOR HUGO</li>`;
   }
 }
 
