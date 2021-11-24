@@ -102,7 +102,7 @@ async function htmlFila(doc) {
           <h6 class="comment-name">${cod(doc.id)}</h6>
         </div>
         <div class="comment-content">
-          ${alumno}<br>
+          ${alumno} <br>
           ${roles}
         </div>
       </div>
