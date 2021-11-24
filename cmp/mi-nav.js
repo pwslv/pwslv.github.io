@@ -12,9 +12,9 @@ import {
 class MiNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
-      `<ul class="nav navbar-nav">
-        <li  class="active">
-          <a href="index.html">
+      `<ul class="nav nav-pills nav-fill">
+        <li  class="nav-item">
+          <a class="nav-link active"  href="index.html">
             Sesión</a>
         </li>
       </ul>`;
@@ -40,8 +40,8 @@ class MiNav extends HTMLElement {
            * para clientes. */
           if (roles.has("Cliente")) {
             html += /* html */
-              `<li>
-                <a href=
+              `<li  class="nav-item">
+                <a class="nav-link" href=
                   "chat.html">Chat</a>
               </li>`;
           }
@@ -51,11 +51,11 @@ class MiNav extends HTMLElement {
           if (roles.has(
             "Administrador")) {
             html += /* html */
-              `<li>
-                <a href="alumnos.html">Alumnos</a>
+              `<li  class="nav-item">
+                <a class="nav-link" href="alumnos.html">Alumnos</a>
               </li>
-              <li>
-                <a href="usuarios.html">Usuarios</a>
+              <li  class="nav-item">
+                <a class="nav-link" href="usuarios.html">Usuarios</a>
               </li>`;
           }
           this.ul.innerHTML += html;
