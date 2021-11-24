@@ -44,9 +44,9 @@ async function
     forma.email.value =
       usuario.email;
     forma.nombre.value =
-      usuario.displayName || "";
+      usuario.displayName;
     avatar.src =
-      usuario.photoURL || "";
+      usuario.photoURL;
     forma.terminarSesión.
       addEventListener(
         "click", terminaSesión);
