@@ -92,6 +92,25 @@ async function htmlFila(doc) {
   parámetros.append("id", doc.id);
   return (/* html */
     `<li>
+    <a class="fila conImagen"
+          href=
+    "usuario.html?${parámetros}">
+    <div class="comment-main-level">
+      <div class="comment-avatar"><img src="${img}" ></div>
+      <div class="comment-box">
+        <div class="comment-head">
+          <h6 class="comment-name">${cod(doc.id)}<br>${alumno}<br>${roles}</h6>
+        </div>
+        <div class="comment-content">
+          ${cod(data.texto)}
+        </div>
+      </div>
+    </div>
+    </a>
+  </li>`);
+}
+
+/* `<li>
       <a class="fila conImagen"
           href=
     "usuario.html?${parámetros}">
@@ -111,8 +130,7 @@ async function htmlFila(doc) {
           </span>
         </span>
       </a>
-    </li>`);
-}
+    </li>`);*/
 
 /** Recupera el html de un
  * alumno en base a su id.
