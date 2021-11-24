@@ -144,16 +144,29 @@ function htmlFila(doc) {
   /* Agrega un li con los datos
    * del documento, los cuales se
    * codifican para evitar
-   * inyección de código. */
-  return ( /* html */
-    `<li class="fila">
+   * inyección de código.
+   * `<li class="fila">
       <strong class="primario">
         ${cod(data.usuarioId)}
       </strong>
       <span class="secundario">
         ${cod(data.texto)}
       </span>
-    </li>`);
+    </li>`); */
+  return ( /* html */
+    `<li>
+				<div class="comment-main-level">
+					<div class="comment-avatar"><img src="icono.png" alt=""></div>
+					<div class="comment-box">
+						<div class="comment-head">
+							<h6 class="comment-name">${cod(data.usuarioId)}</h6>
+						</div>
+						<div class="comment-content">
+							${cod(data.texto)}
+						</div>
+					</div>
+				</div>
+			</li>`);
 }
 
 /** Función que se invoca cuando
