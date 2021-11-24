@@ -712,8 +712,8 @@ input, select, textarea {
 						}
 
 				.row {
-					margin-top: -25px;
-					margin-left: -25px;
+					margin-top: -85px;
+					margin-left: 5%;
 				}
 
 					.row > * {
@@ -2100,7 +2100,7 @@ input, select, textarea {
 
 	#top {
 		padding: 10em 0 10em 0;
-		text-align: left;
+		text-align: center;
 	}
 
 		#top .image {
