@@ -99,10 +99,11 @@ async function htmlFila(doc) {
       <div class="comment-avatar"><img src="${img}" ></div>
       <div class="comment-box">
         <div class="comment-head">
-          <h6 class="comment-name">${cod(doc.id)}<br>${alumno}<br>${roles}</h6>
+          <h6 class="comment-name">${cod(doc.id)}</h6>
         </div>
         <div class="comment-content">
-          ${cod(data.texto)}
+          ${alumno}<br>
+          ${roles}
         </div>
       </div>
     </div>
