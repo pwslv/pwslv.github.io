@@ -12,8 +12,8 @@ import {
 class MiNav extends HTMLElement {
   connectedCallback() {
     this.innerHTML = /* html */
-      `<ul>
-        <li>
+      `<ul class="nav navbar-nav">
+        <li  class="active">
           <a href="index.html">
             Sesión</a>
         </li>
